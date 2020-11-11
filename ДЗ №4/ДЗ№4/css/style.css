@@ -222,7 +222,7 @@ th {
 	padding-top: 58px;
 	padding-bottom: 60px;
 	font-size: 40px;
-	font-weight: 500;
+	font-weight: medium;
 	font-stretch: normal;
 	font-style: normal;
 	line-height: 1.4;
@@ -232,8 +232,10 @@ th {
 }
 
 .modules-cards {
-	width: 1020px;
-	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+	margin-left: 90px;
+	margin-right: 90px;
 }
 .modules-subtitle {
 	padding: 0;
