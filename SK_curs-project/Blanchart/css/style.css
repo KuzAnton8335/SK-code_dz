@@ -1,0 +1,184 @@
+*,
+*::before,
+*::after {
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+   padding: 0;
+}
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+   margin: 0;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+   list-style: none;
+}
+a {
+   text-decoration: none;
+}
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+   -webkit-text-decoration-skip: ink;
+   text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+   max-width: 100%;
+   display: block;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+   font: inherit;
+}
+
+:root {
+   --black-color: #000;
+   --white-color: #fff;
+   --hover-color: #7943a4;
+   --focus-color: #c283f3;
+}
+body {
+   font-family: "Open Sans", sans-serif;
+   min-height: 100vh;
+   scroll-behavior: smooth;
+   text-rendering: optimizeSpeed;
+}
+
+.header {
+   background-color: var(--black-color);
+}
+
+.container {
+   max-width: 1600px;
+   min-height: 100px;
+   margin: 0 auto;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+.header-logo {
+   margin-right: 124px;
+}
+.header-nav {
+   max-width: 1300px;
+}
+
+.header-nav__list {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+}
+
+.nav-item {
+   max-width: 160px;
+   padding-left: 50px;
+}
+
+.nav-item:first-child {
+   white-space: nowrap;
+}
+.nav-item:last-child {
+   margin-right: 276px;
+}
+
+.nav-item__link {
+   display: block;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 25px;
+   text-align: center;
+   color: var(--white-color);
+   padding: 2px 6px;
+   -webkit-transition: ease-in-out 0.3s background-color;
+   -o-transition: ease-in-out 0.3s background-color;
+   transition: ease-in-out 0.3s background-color;
+}
+
+.nav-item__link:hover {
+   background-color: var(--hover-color);
+}
+.nav-item__link:focus {
+   background-color: inherit;
+   color: var(--focus-color);
+}
+.nav-item__link:active {
+   background-color: inherit;
+   color: var(--hover-color);
+}
+.header-exit__link {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 25px;
+   text-align: center;
+   color: var(--white-color);
+   -webkit-transition: ease-in-out 0.3s background-color;
+   -o-transition: ease-in-out 0.3s background-color;
+   transition: ease-in-out 0.3s background-color;
+}
+
+.header-exit__link:hover {
+   background-color: var(--hover-color);
+}
+
+.header-exit__link:focus {
+   background-color: inherit;
+   color: var(--focus-color);
+}
+.header-exit__link:active {
+   background-color: inherit;
+   color: var(--hover-color);
+}
+
+.exit-svg {
+   width: 13px;
+   height: 13px;
+   margin-top: 7px;
+   margin-right: 7px;
+}
+
+.exit-svg path {
+   -webkit-transition: fill ease-in-out 0.3s;
+   -o-transition: fill ease-in-out 0.3s;
+   transition: fill ease-in-out 0.3s;
+}
+
+.header-exit__link:focus .exit-svg path {
+   fill: var(--focus-color);
+}
+
+.header-exit__link:active .exit-svg path {
+   fill: var(--hover-color);
+}
