@@ -76,16 +76,20 @@ body {
    max-width: 1600px;
    min-height: 100px;
    margin: 0 auto;
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+.header-container {
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
    -webkit-box-align: center;
    -ms-flex-align: center;
    align-items: center;
-   padding-top: 30px;
-   padding-bottom: 30px;
 }
 .header-logo {
+   display: block;
    margin-right: 124px;
 }
 .header-nav {
@@ -135,6 +139,32 @@ body {
    background-color: inherit;
    color: var(--hover-color);
 }
+
+.burger-menu {
+   width: 36px;
+   height: 28px;
+   display: none;
+}
+
+.burger-line__1 {
+   width: 36px;
+   height: 3.65px;
+   background-color: var(--white-color);
+   margin-bottom: 8.52px;
+}
+
+.burger-line__2 {
+   width: 28px;
+   height: 3.65px;
+   background-color: var(--white-color);
+   margin-bottom: 8.52px;
+}
+
+.burger-line__3 {
+   width: 24px;
+   height: 3.65px;
+   background-color: var(--white-color);
+}
 .header-exit__link {
    display: -webkit-box;
    display: -ms-flexbox;
@@ -165,7 +195,7 @@ body {
 .exit-svg {
    width: 13px;
    height: 13px;
-   margin-top: 7px;
+   margin-top: 5px;
    margin-right: 7px;
 }
 
@@ -182,3 +212,78 @@ body {
 .header-exit__link:active .exit-svg path {
    fill: var(--hover-color);
 }
+
+.nav-sub__menu {
+   display: block;
+   min-height: 70px;
+   background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* reponsive - styles */
+@media (max-width: 1440px) {
+   .header-logo {
+      margin-right: 0;
+   }
+
+   .nav-item:last-child {
+      margin-right: 155px;
+   }
+}
+
+@media (max-width: 1220px) {
+   .header-logo {
+      margin-right: 0;
+   }
+
+   .nav-item:last-child {
+      margin-right: 50px;
+   }
+
+   .nav-item {
+      padding-left: 30px;
+   }
+}
+
+@media (max-width: 1115px) {
+   .header-logo {
+      margin-right: 0;
+   }
+
+   .nav-item:last-child {
+      margin-right: 25px;
+   }
+
+   .nav-item {
+      padding-left: 15px;
+   }
+}
+
+@media (max-width: 1024px) {
+   .header-logo {
+      margin-right: 0;
+      order: 2;
+   }
+
+   .header-nav {
+      order: 1;
+      margin-left: 0;
+   }
+
+   .header-nav__list {
+      display: none;
+   }
+
+   .header-container {
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      align-items: center;
+   }
+   .header-exit {
+      display: none;
+   }
+   .burger-menu {
+      display: block;
+      cursor: pointer;
+   }
+}
+/* /reponsive -styles */
