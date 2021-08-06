@@ -68,6 +68,7 @@ body {
    text-rendering: optimizeSpeed;
 }
 
+/* header */
 .header {
    background-color: var(--black-color);
 }
@@ -218,6 +219,162 @@ body {
    min-height: 70px;
    background-color: rgba(0, 0, 0, 0.4);
 }
+/* /header */
+/* sub-menu */
+
+.nav-sub__drop {
+   max-width: 1600px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+/* Dropdown Button */
+.dropbtn {
+   background-color: inherit;
+   color: white;
+   padding: 8px;
+   font-size: 18px;
+   line-height: 25px;
+   border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+   position: relative;
+   display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: rgba(0, 0, 0, 0.4);
+   width: 300px;
+   height: 300px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   margin-top: 29px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+   color: var(--white-color);
+   max-width: 220px;
+   min-height: 40px;
+   padding: 12px 16px;
+   display: block;
+   margin-top: 40px;
+   margin-left: 40px;
+   background-image: url("../img/sub-menu-bg.png");
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+
+.dropdown-content a:last-child {
+   margin-bottom: 40px;
+}
+
+.simplebar-track.simplebar-vertical {
+   width: 4px;
+}
+.simplebar-vertical {
+   margin-top: 42px;
+   margin-right: 19px;
+   height: 220px;
+   background-color: var(--white-color);
+}
+
+.simplebar-scrollbar {
+   background-color: #000;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+   border: 2px solid #9d5cd0;
+}
+
+.dropdown-content a:active {
+   background-color: rgba(216, 143, 153, 0.9);
+   border: 2px solid #9d5cd0;
+}
+
+.dropdown-content a:focus {
+   background-color: rgba(194, 131, 243, 0.39);
+   border: 2px solid #9d5cd0;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+   display: block;
+}
+
+.dropdown:active .dropdown-content {
+   display: block;
+}
+
+.dropdown:focus .dropdown-content {
+   display: block;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+   background-color: var(--hover-color);
+   color: var(--white-color);
+   cursor: pointer;
+}
+
+.dropdown:active .dropbtn {
+   background-color: inherit;
+   color: #9d5cd0;
+   cursor: pointer;
+}
+
+.dropdown:focus .dropbtn {
+   background-color: inherit;
+   color: #7943a4;
+   cursor: pointer;
+}
+.dropbtn:active .down-svg__menu path {
+   fill: #9d5cd0;
+}
+
+.dropbtn:focus .down-svg__menu path {
+   fill: #7943a4;
+   transform: rotate(180deg);
+}
+.nav-sub__search {
+   margin-left: 329px;
+}
+
+.nav-sub__form {
+   display: flex;
+}
+
+.nav-sub__form input {
+   background-color: inherit;
+   border: none;
+   outline: none;
+   border-bottom: 1px solid #fff;
+   color: var(--white-color);
+   cursor: pointer;
+}
+
+.nav-sub__form input:hover {
+   border-bottom: 1px solid #c283f3;
+}
+.nav-sub__form input:focus {
+   border-bottom: 1px solid #7943a4;
+}
+.nav-sub__form input::placeholder {
+   font-size: 18px;
+   line-height: 25px;
+   color: var(--white-color);
+}
+
+.input-search {
+   display: block;
+   width: 22.1px;
+   height: 21.62px;
+   margin-right: 9px;
+}
+/* /sub-menu */
 
 /* reponsive - styles */
 @media (max-width: 1440px) {
