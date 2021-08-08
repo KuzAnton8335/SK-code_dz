@@ -1,240 +1,185 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
-    />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Blanchard художественная галерея</title>
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="container header-container">
-        <a href="#index.html" class="header-logo__link">
-          <picture class="header-logo">
-            <source srcset="img/logo-phone.svg" media="(max-width: 320px)" />
-            <source srcset="img/logo-smart.svg" media="(max-width: 768px)" />
-            <source srcset="img/logo-tab.svg" media="(max-width: 1024px)" />
-            <source srcset="img/header-logo.svg" />
-            <img
-              src="img/header-logo.svg"
-              alt="Blanchard художественная галерея"
-            />
-          </picture>
-        </a>
-        <nav class="header-nav">
-          <ul class="header-nav__list">
-            <li class="nav-item">
-              <a href="#" class="nav-item__link">О нас</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-item__link">Галерея</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-item__link">Каталог</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-item__link">События</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-item__link">Издания</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-item__link">Проекты</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-item__link">Контакты</a>
-            </li>
-          </ul>
-          <div class="burger-menu">
-            <div class="burger-line__1"></div>
-            <div class="burger-line__2"></div>
-            <div class="burger-line__3"></div>
-          </div>
-        </nav>
-        <div class="header-exit">
-          <a href="#" class="header-exit__link">
-            <svg
-              width="13"
-              height="13"
-              viewBox="0 0 13 13"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="exit-svg"
-            >
-              <path
-                d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
-                fill="white"
-              /></svg
-            >Войти
-          </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Blanchard художественная галерея</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <a href="#index.html" class="header-logo__link">
+        <picture class="header-logo">
+          <source srcset="img/logo-phone.svg" media="(max-width: 320px)" />
+          <source srcset="img/logo-smart.svg" media="(max-width: 768px)" />
+          <source srcset="img/logo-tab.svg" media="(max-width: 1024px)" />
+          <source srcset="img/header-logo.svg" />
+          <img src="img/header-logo.svg" alt="Blanchard художественная галерея" />
+        </picture>
+      </a>
+      <nav class="header-nav">
+        <ul class="header-nav__list">
+          <li class="nav-item">
+            <a href="#" class="nav-item__link">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-item__link">Галерея</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-item__link">Каталог</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-item__link">События</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-item__link">Издания</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-item__link">Проекты</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-item__link">Контакты</a>
+          </li>
+        </ul>
+        <div class="burger-menu">
+          <div class="burger-line__1"></div>
+          <div class="burger-line__2"></div>
+          <div class="burger-line__3"></div>
         </div>
+      </nav>
+      <div class="header-exit">
+        <a href="#" class="header-exit__link">
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="exit-svg">
+            <path
+              d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
+              fill="white" />
+          </svg>Войти
+        </a>
       </div>
-    </header>
-    <div class="nav-sub__menu">
-      <div class="container">
-        <div class="nav-sub__drop">
-          <div class="dropdown">
-            <button class="dropbtn">
-              Реализм
-              <svg
-                width="12"
-                height="7"
-                viewBox="0 0 12 7"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="down-svg__menu"
-              >
-                <path d="M11 1L6 6L1 1" stroke="white" />
-              </svg>
-            </button>
-            <div class="dropdown-content" data-simplebar>
-              <a href="#">Реализм</a>
-              <a href="#">Импрессионизм</a>
-              <a href="#">Постимпрессионизм</a>
-              <a href="#">Авангард</a>
-              <a href="#">Футуризм</a>
-            </div>
+    </div>
+  </header>
+  <div class="nav-sub__menu">
+    <div class="container">
+      <div class="nav-sub__drop">
+        <div class="dropdown">
+          <button class="dropbtn">
+            Реализм
+            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="down-svg__menu">
+              <path d="M11 1L6 6L1 1" stroke="white" />
+            </svg>
+          </button>
+          <div class="dropdown-content" data-simplebar>
+            <a href="#"> <img src="img/sub__menu-img/sub-img-1.png" alt="Реализм"> <span>Реализм</span> </a>
+            <a href="#"><img src="img/sub__menu-img/sub-img-2.png" alt="Импрессионизм"> <span>Импрессионизм</span></a>
+            <a href="#"><img src="img/sub__menu-img/sub-img-3.png"
+                alt="Постимпрессионизм"><span>Постимпрессионизм</span></a>
+            <a href="#"><img src="img/sub__menu-img/sub-img-4.png" alt="Авангард"><span> Авангард</span> </a>
+            <a href="#"> <img src="img/sub__menu-img/sub-img-1.png" alt="Футуризм"> <span> Футуризм</span></a>
           </div>
+        </div>
 
-          <div class="dropdown">
-            <button class="dropbtn">
-              Импрессионизм
-              <svg
-                width="12"
-                height="7"
-                viewBox="0 0 12 7"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="down-svg__menu"
-              >
-                <path d="M11 1L6 6L1 1" stroke="white" />
-              </svg>
-            </button>
-            <div class="dropdown-content" data-simplebar>
-              <a href="#">Импрессионизм</a>
-              <a href="#">Реализм</a>
-              <a href="#">Импрессионизм</a>
-              <a href="#">Постимпрессионизм</a>
-              <a href="#">Авангард</a>
-              <a href="#">Футуризм</a>
-            </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Импрессионизм
+            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="down-svg__menu">
+              <path d="M11 1L6 6L1 1" stroke="white" />
+            </svg>
+          </button>
+          <div class="dropdown-content" data-simplebar>
+            <a href="#">Импрессионизм</a>
+            <a href="#">Реализм</a>
+            <a href="#">Импрессионизм</a>
+            <a href="#">Постимпрессионизм</a>
+            <a href="#">Авангард</a>
+            <a href="#">Футуризм</a>
           </div>
+        </div>
 
-          <div class="dropdown">
-            <button class="dropbtn">
-              Постимпрессионизм
-              <svg
-                width="12"
-                height="7"
-                viewBox="0 0 12 7"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="down-svg__menu"
-              >
-                <path d="M11 1L6 6L1 1" stroke="white" />
-              </svg>
-            </button>
-            <div class="dropdown-content" data-simplebar>
-              <a href="#">Импрессионизм</a>
-              <a href="#">Реализм</a>
-              <a href="#">Импрессионизм</a>
-              <a href="#">Постимпрессионизм</a>
-              <a href="#">Авангард</a>
-              <a href="#">Футуризм</a>
-            </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Постимпрессионизм
+            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="down-svg__menu">
+              <path d="M11 1L6 6L1 1" stroke="white" />
+            </svg>
+          </button>
+          <div class="dropdown-content" data-simplebar>
+            <a href="#">Импрессионизм</a>
+            <a href="#">Реализм</a>
+            <a href="#">Импрессионизм</a>
+            <a href="#">Постимпрессионизм</a>
+            <a href="#">Авангард</a>
+            <a href="#">Футуризм</a>
           </div>
+        </div>
 
-          <div class="dropdown">
-            <button class="dropbtn">
-              Авангард
-              <svg
-                width="12"
-                height="7"
-                viewBox="0 0 12 7"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="down-svg__menu"
-              >
-                <path d="M11 1L6 6L1 1" stroke="white" />
-              </svg>
-            </button>
-            <div class="dropdown-content" data-simplebar>
-              <a href="#">Импрессионизм</a>
-              <a href="#">Реализм</a>
-              <a href="#">Импрессионизм</a>
-              <a href="#">Постимпрессионизм</a>
-              <a href="#">Авангард</a>
-              <a href="#">Футуризм</a>
-            </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Авангард
+            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="down-svg__menu">
+              <path d="M11 1L6 6L1 1" stroke="white" />
+            </svg>
+          </button>
+          <div class="dropdown-content" data-simplebar>
+            <a href="#">Импрессионизм</a>
+            <a href="#">Реализм</a>
+            <a href="#">Импрессионизм</a>
+            <a href="#">Постимпрессионизм</a>
+            <a href="#">Авангард</a>
+            <a href="#">Футуризм</a>
           </div>
+        </div>
 
-          <div class="dropdown">
-            <button class="dropbtn">
-              Футуризм
-              <svg
-                width="12"
-                height="7"
-                viewBox="0 0 12 7"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="down-svg__menu"
-              >
-                <path d="M11 1L6 6L1 1" stroke="white" />
-              </svg>
-            </button>
-            <div class="dropdown-content" data-simplebar>
-              <a href="#">Импрессионизм</a>
-              <a href="#">Реализм</a>
-              <a href="#">Импрессионизм</a>
-              <a href="#">Постимпрессионизм</a>
-              <a href="#">Авангард</a>
-              <a href="#">Футуризм</a>
-            </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Футуризм
+            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="down-svg__menu">
+              <path d="M11 1L6 6L1 1" stroke="white" />
+            </svg>
+          </button>
+          <div class="dropdown-content" data-simplebar>
+            <a href="#">Импрессионизм</a>
+            <a href="#">Реализм</a>
+            <a href="#">Импрессионизм</a>
+            <a href="#">Постимпрессионизм</a>
+            <a href="#">Авангард</a>
+            <a href="#">Футуризм</a>
           </div>
+        </div>
 
-          <div class="nav-sub__search">
-            <form class="nav-sub__form">
-              <svg
-                width="23"
-                height="22"
-                viewBox="0 0 23 22"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="input-search"
-              >
-                <rect
-                  width="6.8678"
-                  height="1.71695"
-                  transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)"
-                  fill="white"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"
-                  fill="white"
-                />
-              </svg>
-              <input type="text" placeholder="Поиск по сайту" />
-            </form>
-          </div>
+        <div class="nav-sub__search">
+          <form class="nav-sub__form">
+            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="input-search">
+              <rect width="6.8678" height="1.71695"
+                transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"
+                fill="white" />
+            </svg>
+            <input type="text" placeholder="Поиск по сайту" />
+          </form>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
-  </body>
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+</body>
+
 </html>
