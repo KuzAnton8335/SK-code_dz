@@ -261,13 +261,20 @@ body {
    color: var(--white-color);
    max-width: 220px;
    min-height: 40px;
-   padding: 12px 16px;
    display: block;
    margin-top: 40px;
    margin-left: 40px;
-   background-image: url("../img/sub-menu-bg.png");
-   background-repeat: no-repeat;
-   background-position: center center;
+   position: relative;
+}
+
+.dropdown-content a img {
+   opacity: 0.6;
+}
+.dropdown-content a span {
+   position: absolute;
+   top: 10px;
+   left: 20px;
+   right: 0;
 }
 
 .dropdown-content a:last-child {
@@ -292,14 +299,10 @@ body {
    border: 2px solid #9d5cd0;
 }
 
-.dropdown-content a:active {
-   background-color: rgba(216, 143, 153, 0.9);
-   border: 2px solid #9d5cd0;
-}
-
 .dropdown-content a:focus {
    background-color: rgba(194, 131, 243, 0.39);
    border: 2px solid #9d5cd0;
+   opacity: 1;
 }
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
